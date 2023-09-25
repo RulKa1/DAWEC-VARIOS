@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Ejercicio6.js"></script>
+    <style>
+        #contenedor {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #divPrincipal {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        #divFila {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .colorDiv {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #radiobuttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="divPrincipal">
+            <p>Texto principal</p>
+        </div>
+        <div id="divFila">
+            <div class="colorDiv" id="div1">
+                Div 1
+            </div>
+            <div class="colorDiv" id="div2">
+                Div 2
+            </div>
+            <div class="colorDiv" id="div3">
+                Div 3
+            </div>
+        </div>
+        <div id="radiobuttons">
+            <input type="radio" name="color" id="rosa"> <label for="rosa">Rosa</label>
+            <input type="radio" name="color" id="verde"> <label for="verde">Verde</label>
+            <input type="radio" name="color" id="azul"> <label for="azul">Azul</label>
+        </div>
+    </div>
