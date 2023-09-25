@@ -15,6 +15,6 @@ function dividir() {
   if (numero1 >= 0 && numero2 >= 0) {
     resultado.value = numero1 / numero2;
   } else {
-    alert("No se puede hacer la operacion");
+    alert("No se puede hacer la operacion") ;
   }
 }
