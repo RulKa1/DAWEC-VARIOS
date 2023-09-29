@@ -69,7 +69,7 @@ function ejercicio4(){
             }
         }
     } while (numero != undefined);
-    document.write(suma);
+    alert(suma);
 
 
 
