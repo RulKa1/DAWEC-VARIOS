@@ -6,6 +6,7 @@ function ejercicio1() {
       alert("No tienes permiso para conducir");
     }
 }  
+/**/
 
 function ejercicio2(){
 let nota = prompt("Introduzca una nota");
@@ -51,6 +52,30 @@ function ejercicio3(){
   }
   alert(cadenaPalabras);
 }
+/**/
+
+function ejercicio4(){
+
+    var suma = 0;
+    do {
+        var numero = prompt("Introduce un numero");
+        if (Number(numero) == numero) {
+            numero = Number(numero);
+            suma = suma + numero;
+        }
+        else {
+            if (numero != undefined) {
+                alert(numero + " No es un numero");
+            }
+        }
+    } while (numero != undefined);
+    document.write(suma);
+
+
+
+}
+
+/**/
 function ejercicio5(){
 var resto = 0;
 var letra = "";
