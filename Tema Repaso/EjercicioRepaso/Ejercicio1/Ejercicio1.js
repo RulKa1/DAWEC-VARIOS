@@ -8,4 +8,6 @@ function comprobarNumeroPositivoNegativo() {
     return alert("El numero " + numero + " Es negativo");
   }
   return alert("No es un numero")
+
+  
 }
