@@ -1,0 +1,15 @@
+.hijo{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+}
+#padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#colorTruco{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}

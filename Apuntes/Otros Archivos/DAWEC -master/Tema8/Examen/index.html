@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Registro de Productos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='./script/main.js'></script>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<div id="app">
+    <h1>Venta de ropa y complementos de Segunda Mano</h1>
+    <div class="row">
+        <div id="registrarNuevaPrenda">
+            <form action="" @submit.prevent="crearNuevaPrenda">
+                <label for="nombrePrenda">Prenda</label>
+                <input type="text" name="nombrePrenda" id="nombrePrenda" v-model="nombreNuevo">
+                <label for="colorPrenda">Color</label>
+                <input type="color" name="colorPrenda" id="colorPrenda" v-model="colorNuevo">
+                <label for="talla">Talla</label>
+                <select name="talla" id="talla">
+                    <option v-for="(talla, index) in listaTallas" :key="index" v-model="tallaNueva">{{talla}}
+                    </option>
+                </select>
+                <label for="precioPrenda">Precio</label>
+                <input type="text" name="precioPrenda" id="precioPrenda" v-model="precioPrendaNuevo">
+                <button type="submit">Dar de alta</button>
+            </form>
+        </div>
+        <div id="gestionPrendas">
+            <table>
+                <tr>
+                    <th>Prenda</th>
+                    <th>Talla</th>
+                    <th>Precio</th>
+                    <th>Accion</th>
+                    <th>Vender</th>
+                </tr>
+                <tbody class="tdbodybien">
+                    <tr v-for="(prendaSinvender, index) in listaProductosSinVender" :key="index">
+                        <td>{{prendaSinvender.nombre}}</td>
+                        <td>{{prendaSinvender.talla}}</td>
+                        <td><input type="text" name="precioTalla" v-model="prendaSinvender.nuevoPrecio"
+                                :disabled="!prendaSinvender.modificar"></td>
+                        <td>
+                            <button v-show="!prendaSinvender.modificar"
+                                @click="iniciarModificacion(index)">Modificar</button>
+                            <button v-show="prendaSinvender.modificar" @click="guardar(index)">Guardar</button>
+                        </td>
+                        <td><button @click="venderProducto(index)">Vender</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="textoDeTodasLasVentas">
+        <h2 v-show="listaProductosSinVender==0">
+            Enhorabuena, parece que
+            has vendido todas las prendas que has puesto a la venta. ¿Por qué no sigues vendiendo lo que ya no
+            usas
+        </h2>
+    </div>
+    <div id="ultimasVentas">
+        <table>
+            <tr>
+                <th>Tipo de Prenda</th>
+                <th>Talla</th>
+                <th>Precio de Venta</th>
+            </tr>
+            <tbody class="tdbodybien">
+                <tr v-for="(productoVendido, index) in listaProductosVendidos" :key="index">
+                    <td>{{productoVendido.nombre}}</td>
+                    <td>{{productoVendido.talla}}</td>
+                    <td>{{productoVendido.precio}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    app.mount("#app");
+</script>
+
+<body>
+
+</body>
+
+</html>

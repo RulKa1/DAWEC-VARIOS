@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div id="izquierda" class="general">
+            <label v-if="elemento == 'input'">Nombre: </label>
+            <input v-if="elemento == 'input'" type="text" name="nombre" id="nombre">
+            <span v-if="elemento == 'texto'"> {{texto}}</span>
+            <table v-if="elemento == 'tabla'">
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                </tr>
+            </table>
+        </div>
+        <div id="derecha" class="general">
+            <table v-if="personas.length > 0">
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                </tr>
+                <tr v-for="(persona, index) in personas" :key="persona.dni">
+                    <td>{{persona.dni}}</td>
+                    <td>{{persona.nombre}}</td>
+                    <td>{{persona.apellidos}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        app.mount("#app");
+    </script>
+</body>
+
+</html>

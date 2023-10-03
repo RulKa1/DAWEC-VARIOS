@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='../js/main.js' async></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <form action="" method="post" id="formulario">
+        <label for="nombre">Nombre del Cliente</label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+
+        <label for="apellido">Apellidos del Cliente</label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+
+        <label for="dni">DNI del Cliente</label>
+        <input type="text" name="dni" id="dni">
+        <br>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+        <br>
+
+        <input type="radio" id="hombre" name="sexo" value="H">
+        <label for="hombre">Hombre</label><br>
+
+        <input type="radio" id="mujer" name="sexo" value="M">
+        <label for="mujer">Mujer</label><br>
+
+        <label for="ext">Deportes de exterior</label>
+        <input type="checkbox" id="ext" value="ext">
+
+        <label for="equi">Deportes de equipo</label>
+        <input type="checkbox" id="equi" value="equi">
+
+        <label for="indv">Deportes individuales </label>
+        <input type="checkbox" id="indv" value="indv">
+
+        <label for="int">Deportes de interior</label>
+        <input type="checkbox" id="int" value="int"><br>
+
+        <button type="submit" id="enviar">Enviar Formulario</button>
+        <p id="borrarAlgo">BORRAR</p>
+        <p id="actualizarAlgo">ACTUALIZAR</p>
+
+    <br>
+</form>
+    <table id="tablaResultado">
+        <th>
+        <td>ID</td>
+        <td>Nombre Cliente</td>
+        <td>Fecha Nacimiento</td>
+        <td>Sexo</td>
+        </th>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/style.css'>
+    <script src='./scripts/main.js'></script>
+</head>
+<body>
+    <form action="" method="get" novalidate id="formulario">
+        <select name="provincias" id="provincias">
+            <option value="Provincia1">Provincia1</option>
+            <option value="Provincia2">Provincia2</option>
+            <option value="Provincia3">Provincia3</option>
+            <option value="Provincia4">Provincia4</option>
+            <option value="Provincia5">Provincia5</option>
+        </select>
+        <br>
+        <select name="hogar" id="hogar">
+            <option value="CasaRural">Casa rural</option>
+            <option value="HotelRural">Hotel Rural</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Hostal">Hostal</option>
+            <option value="Apartamento">Apartamento</option>
+        </select>
+        <br>
+        Montaña:
+        <input type="checkbox" name="Montaña" id="Montaña">
+        Meseta:
+        <input type="checkbox" name="Meseta" id="Meseta">
+        Nucleo Poblacional:
+        <input type="checkbox" name="nucleoPoblacional" id="nucleoPoblacional">
+        Aislado:
+        <input type="checkbox" name="Aislado" id="Aislado">
+        <input type="submit" value="Enviar">
+    </form>
+    <p id="validoMontaña"></p>
+    <p id="hotelTexto"></p>
+</body>
+</html>

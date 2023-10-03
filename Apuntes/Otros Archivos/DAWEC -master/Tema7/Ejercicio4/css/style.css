@@ -1,0 +1,14 @@
+#borrarAlgo {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+#borrarAlgo:hover,
+#actualizarAlgo:hover {
+  opacity: 20%;
+}
+#actualizarAlgo {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}

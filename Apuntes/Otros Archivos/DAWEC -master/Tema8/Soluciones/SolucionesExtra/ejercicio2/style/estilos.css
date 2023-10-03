@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+main {
+    border: 1px solid black;
+    margin: 2%;
+}
+
+.estiloContenedores {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 220px;
+    margin: 2%;
+    padding: 1%;
+}
+
+#datosPersonales {
+    float: left;
+    width: 46%;
+
+}
+
+#datosPersonales p {
+    width: 50%;
+}
+
+#productos {
+    float: right;
+    width: 46%;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#datosSucursal {
+    clear: both;
+    height: 280px;
+}

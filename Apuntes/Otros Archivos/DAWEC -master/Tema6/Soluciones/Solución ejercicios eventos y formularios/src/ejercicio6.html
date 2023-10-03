@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/ejercicio6.css">
+    <script src="../scripts/ejercicio6.js"></script>
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <div id="divFormulario">
+        <form action="" method="get" id="formulario" novalidate>
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre" autofocus required /> <br>
+            <label for="email"> Correo electrónico: </label>
+            <input type="email" name="email" id="email"/> <br>
+            <label for="url"> URL: </label>
+            <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal" /> <br>
+            <label for="fecha"> Fecha: </label>
+            <input type="date" name="fecha" id="fecha" required /> <br>
+            <label for="tiempo"> Hora: </label>
+            <input type="time" name="tiempo" id="tiempo"/> <br>
+            <label for="fechaHora"> Fecha y hora: </label>
+            <input type="datetime" name="fechaHora" id="fechaHora"/> <br>
+            <label for="mes"> Mes: </label>
+            <input type="month" name="mes" id="mes"/> <br>
+            <label for="telefono"> Teléfono: </label>
+            <input type="tel" name="telefono" id="telefono" required /> <br>
+            <label for="busqueda"> Buscar por: </label>
+            <input type="search" name="busqueda" id="busqueda" required /> <br>
+            <label for="color"> Color favorito: </label>
+            <input type="color" name="color" id="color"/> <br>
+            <input type="submit" value="Enviar" />
+
+            <textarea id="area"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>

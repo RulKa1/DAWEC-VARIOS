@@ -29,6 +29,7 @@ function añadirNombre(posicion, array, nombre) {
     }
 }
 
+
 function borrarNombre(posicion, array) {
     if (posicion >= 0 && posicion < array.length) {
         array.splice(posicion, 1); // Eliminar elemento en la posición especificada
