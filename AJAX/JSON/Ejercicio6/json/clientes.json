@@ -1,0 +1,149 @@
+{
+    "clientes": [{
+            "id": 1,
+            "nombre": "Sonia",
+            "apellidos": "Gutierrez Garcia",
+            "DNI": "80578958Ñ",
+            "fechaNac": "10/10/1010",
+            "Sexo": "M",
+            "preferencias":"ext_equi"
+
+
+        },
+        {
+            "id": 2,
+            "nombre": "Raul",
+            "apellidos": "Calvo Hernandez",
+            "DNI": "70957497J",
+            "fechaNac": "04/12/2002",
+            "Sexo": "M",
+            "preferencias":"ext_equi"
+
+
+        },
+        {
+            "id": 3,
+            "nombre": "David",
+            "apellidos": "Sanchez Sanchez",
+            "DNI": "70957478J",
+            "fechaNac": "02/11/2001",
+            "Sexo": "M",
+            "preferencias":"ext_equi"
+
+
+        },
+        {
+            "id": 4,
+            "nombre": "Hugo",
+            "apellidos": "Blanco Jimenez",
+            "DNI": "90757478J",
+            "fechaNac": "01/01/2003",
+            "Sexo": "M",
+            "preferencias":"ext_equi"
+
+
+        },
+        {
+            "id": 5,
+            "nombre": "David",
+            "apellidos": "Sancho Sanchez",
+            "DNI": "70957478J",
+            "fechaNac": "02/11/2001",
+            "Sexo": "M",
+            "preferencias":"ext_equi"
+
+
+        },
+        {
+            "id": 6,
+            "nombre": "María",
+            "apellidos": "González Rodríguez",
+            "DNI": "80965432K",
+            "fechaNac": "12/05/1992",
+            "Sexo": "F",
+            "preferencias": "indv_int"
+        },
+        {
+            "id": 7,
+            "nombre": "Daniel",
+            "apellidos": "Martínez López",
+            "DNI": "90987456L",
+            "fechaNac": "25/09/1987",
+            "Sexo": "H",
+            "preferencias": "equi"
+        },
+        {
+            "id": 8,
+            "nombre": "Ana",
+            "apellidos": "Fernández García",
+            "DNI": "10923456M",
+            "fechaNac": "03/08/1993",
+            "Sexo": "F",
+            "preferencias": "ext"
+        },
+        {
+            "id": 9,
+            "nombre": "Luis",
+            "apellidos": "Martín Pérez",
+            "DNI": "20934567N",
+            "fechaNac": "18/11/1984",
+            "Sexo": "H",
+            "preferencias": "ext_equi"
+        },
+        {
+            "id": 10,
+            "nombre": "Eva",
+            "apellidos": "Sánchez Martínez",
+            "DNI": "30945678O",
+            "fechaNac": "09/04/1998",
+            "Sexo": "F",
+            "preferencias": "ext_indv"
+        },
+        {
+            "id": 11,
+            "nombre": "Alejandro",
+            "apellidos": "Hernández Rodríguez",
+            "DNI": "40956789P",
+            "fechaNac": "16/07/1990",
+            "Sexo": "H",
+            "preferencias": "ext_int"
+        },
+        {
+            "id": 12,
+            "nombre": "Carmen",
+            "apellidos": "Torres Sánchez",
+            "DNI": "50967890Q",
+            "fechaNac": "27/02/1986",
+            "Sexo": "F",
+            "preferencias": "equi_int"
+        },
+        {
+            "id": 13,
+            "nombre": "Javier",
+            "apellidos": "López García",
+            "DNI": "60978901R",
+            "fechaNac": "14/06/1983",
+            "Sexo": "H",
+            "preferencias": "indv"
+        },
+        {
+            "id": 14,
+            "nombre": "Sofía",
+            "apellidos": "Ramírez Martínez",
+            "DNI": "70989012S",
+            "fechaNac": "23/09/1995",
+            "Sexo": "F",
+            "preferencias": "ext"
+        },
+        {
+            "id": 15,
+            "nombre": "Diego",
+            "apellidos": "Fernández Rodríguez",
+            "DNI": "80990123T",
+            "fechaNac": "08/12/1989",
+            "Sexo": "H",
+            "preferencias": "ext_equi"
+        }
+ 
+    ]
+}
