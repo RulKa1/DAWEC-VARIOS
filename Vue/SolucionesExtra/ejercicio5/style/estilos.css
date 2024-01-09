@@ -1,0 +1,30 @@
+#app {
+  width: 60%;
+  background: rgba(9, 190, 15, 0.1);
+  border: 2px solid rgba(9, 190, 15, 0.3);
+  border-radius: 15px 5px;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+}
+
+h1, p {
+  text-align: center;
+}
+
+button {
+  background: rgba(9, 190, 15, 0.1);
+  border: 2px solid rgba(9, 190, 15, 0.5);
+  border-radius: 15px 5px;
+  color: black;
+  text-align: center;
+}
+
+#avisoAccion {
+  width: 50%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 2px dashed rgba(9, 190, 15, 0.5);
+  font-size: 5em;
+  font-weight: bolder;
+}

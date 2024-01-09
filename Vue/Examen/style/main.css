@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+    color: rgb(48, 71, 94); /* A darker, more professional shade of blue */
+    font-size: 2.5em; /* Slightly smaller for a more refined and less overpowering look */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* A clean, professional font */
+    margin-top: 0.5em; /* Reduced top margin for tighter layout */
+    margin-bottom: 0.5em; /* Reduced bottom margin to maintain balance */
+}
+
+#app>*{
+    margin-top: 1em ;
+    margin-left: 1em;
+}
+#registrarNuevaPrenda>form{
+    display: grid;
+    grid-template-columns: 12% 87%;
+    flex-wrap: wrap; /* Allows items to wrap for better responsiveness */
+    background-color: rgb(245, 245, 245);
+}
+#registrarNuevaPrenda>form>button{
+    margin-left: 200%;
+    
+    width: 450%;
+}
+.row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+#app{
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+table, th{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+th{
+    background-color: aqua;
+}
+#textoDeTodasLasVentas {
+    border: 1px solid rgb(200, 200, 200); /* Softer border color for a less harsh look */
+    text-align: left; /* Align text to the left for a more traditional, professional feel */
+    margin: 2em auto; /* Increased margin for better spacing around the element */
+    width: 80%; /* Slightly reduced width for a more focused layout */
+    min-height: 5em; /* Adjusted height for balance */
+    background-color: #f8f9fa; /* Light background color for a clean and modern feel */
+    padding: 1em; /* Added padding for better text presentation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth and modernity */
+    border-radius: 5px; /* Rounded corners for a softer, more modern look */
+    font-size: 1em; /* Standard font size for readability */
+    color: rgb(50, 50, 50); /* Darker font color for better contrast and readability */
+}
+
+#registrarNuevaPrenda>form label{
+    margin-left: 1em;
+}
+#registrarNuevaPrenda>form>*{
+    margin-top: 1em;
+}
+tr {
+    background-color: #f8f9fa; /* A light grey for a cleaner, more professional look */
+}
+
+.tdbodybien tr:nth-child(even) {
+    background-color: #e9ecef; /* A slightly darker shade of grey for alternate rows */
+}
+
+table {
+    width: 60%; /* Slightly increased width for better readability */
+    margin: 2em auto; /* Keeping the same margin */
+    border-collapse: collapse; /* Collapses the border to make it look more tidy */
+    box-shadow: 0px 0px 10px #ccc; /* Adding a subtle shadow for a modern look */
+}
+
+td, th {
+    border: 1px solid #dee2e6; /* Light grey border for a subtle, professional look */
+    padding: 8px; /* Adding padding for better text readability */
+}
+
+th {
+    background-color: #f5f5f5; /* Light grey background for headers for distinction */
+    text-align: left; /* Aligning header text to the left for a cleaner look */
+}

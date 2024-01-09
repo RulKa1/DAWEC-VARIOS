@@ -1,0 +1,22 @@
+.general {
+    width: 50%;
+    padding-top: 15px;
+    height: 150px;
+    text-align: center;
+}
+
+#izquierda {
+    float: left;
+    background-color: antiquewhite;
+}
+
+#derecha {
+    float: right;
+    background-color: azure;
+}
+
+table, th, td
+ {
+    border: 1px solid black;
+    margin: auto;
+}

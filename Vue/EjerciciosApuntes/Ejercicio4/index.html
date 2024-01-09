@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+    <div id="app">
+        <h2 :class="estiloTitulo">Propósitos de año nuevo:</h2>
+        <ul v-if="propositos.length">
+            <li v-for="(prop,index) in propositos" :class="{estilo1: prop.hecho, estilo2:!prop.hecho}">
+              <label>
+              <input type="checkbox"
+                v-model="prop.hecho">
+      
+              <del v-if="prop.hecho" @dblclick="borrarProposito(index)">
+                {{ prop.texto }}
+              </del>
+              <span v-else @dblclick="borrarProposito(index)">
+                {{ prop.texto }}
+              </span>
+            </label>
+            </li>
+        </ul>
+        <p v-else>
+            La lista de propósitos está vacía
+        </p>
+        <input v-model="nuevoProp">
+        <button @click="anadirProposito">Añadir</button>
+        <br>
+        <button @click="borrarPropositos">Borrar todos</button>
+    </div>
+    <script>
+        app.mount("#app");
+    </script>
+</body>
+
+</html>
