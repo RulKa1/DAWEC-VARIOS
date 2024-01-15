@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Componentes</title>
+    <link rel="stylesheet" href="./style/estilos.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{mensaje}}</h1>
+        <hr>
+        <span> Libros disponibles:</span>
+        <ol v-if="libros.length > 0">
+            <li v-for="(libro, index) in libros" :key="index">      
+                {{libro.titulo}}
+            </li>
+        </ol>
+        <hr>
+        <!-- El siguiente código comentado es el que se ha incluido en el componente
+        pie-pagina -->
+        <!-- 
+            <footer id="piepagina">
+                <h3>Sitio Web de Sonia Gutiérrez</h3>
+                <h4>{{mensaje}} - 923451111 </h4>
+                <h5>C/Arriba 25</h5>
+            </footer> 
+        -->
+        <!-- Mediante binding pasamos el valor de la variable telefono de app y se
+        recogerá en la props tel del componente pie-pagina. El segundo atributo, la dirección,
+        se está pasando como parámetro directamente, no a través de una variable del padre-->
+        <pie-pagina :tel-user="telefono" dir="C/Arriba 33" /> 
+        
+        <!-- Si se quisieran añadir dos elementos pie-pagina, el primero deberá incluir etiqueta de cierre
+        y no cerrarse en la etiqueta de apertura, en caso contrario el segundo no se mostrará
+        <pie-pagina :tel-user="telefono" dir="C/Arriba 25" > </pie-pagina>
+        <pie-pagina :tel-user="telefono" dir="C/Arriba 25" />
+        -->
+    </div>
+    <script>
+        const mountedApp1 = app.mount("#app");
+    </script>
+</body>
+
+</html>
